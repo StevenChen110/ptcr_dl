@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "0000001966F27406B727DCBD22F0776A7850B3069AC17C62AB1D3FD41352A052F62D339213698A052F",
+          "certpath": "G:/PTCR/HarmonyOS/PTCR缺陷检测系统.cer",
+          "keyAlias": "ptcr-check",
+          "keyPassword": "0000001968F76A3961EC7D1C26C4BFD4F0202B6D8049E6BC5F71D8ABD294C5DE5E96C985807B172B75",
+          "profile": "G:/PTCR/HarmonyOS/PTCRCHECKDebug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "G:/PTCR/HarmonyOS/ptcrcheck.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
