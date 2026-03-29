@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "ptcr-check"
+    },
+    {
+      "name": "internet_reason",
+      "value": "Used to connect to the detection server, upload images and obtain results"
+    },
+    {
+      "name": "read_media_reason",
+      "value": "Used to select PTCR defect images for inspection"
+    }
+  ]
+}

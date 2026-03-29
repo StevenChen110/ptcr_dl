@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "PTCR缺陷检测系统"
+    },
+    {
+      "name": "internet_reason",
+      "value": "用于连接检测服务器，上传图片并获取结果"
+    },
+    {
+      "name": "read_media_reason",
+      "value": "用于选择需要检测的PTCR缺陷图片"
+    }
+  ]
+}
