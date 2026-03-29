@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>PTCR缺陷检测系统</title>
+    <link rel="icon" href="Resources/applogo.png" type="image/png">
+    <link rel="stylesheet" href="Resources/style.css">
+</head>
+<body>
+    <a href="https://ic.hust.edu.cn/" class="logo-link" target="_blank" rel="noopener noreferrer">
+        <img src="Resources/logo.png" alt="华中科技大学集成电路学院" class="logo">
+    </a>
+
+    <div class="container">
+        <h1>PTCR缺陷检测系统</h1>
+
+        <div id="upload-area" class="upload-area">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">点击或拖拽图片到这里上传</div>
+            <div id="file-name" class="file-name"></div>
+        </div>
+        <input type="file" id="file-input" accept="image/*" hidden>
+
+        <div class="button-group">
+            <button id="detect-btn" class="button" disabled>开始检测</button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p style="margin-top: 10px; color: #7f8c8d;">检测中，请稍候...</p>
+        </div>
+
+        <div id="message" class="message hidden"></div>
+
+        <!-- 检测结果模态框 -->
+        <div id="result-modal" class="modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="close-modal" aria-label="关闭">&times;</button>
+                <h3 style="margin-bottom: 15px;">🔍 检测结果</h3>
+                <img id="result-img" src="" alt="缺陷检测结果图">
+            </div>
+        </div>
+    </div>
+
+    <!-- 引用 Resources 文件夹中的 JS -->
+    <script src="Resources/script.js"></script>
+</body>
+</html>
